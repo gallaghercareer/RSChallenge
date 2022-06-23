@@ -40,7 +40,7 @@ function App() {
           
           position: 'absolute',
          
-          top: 100,
+          top: {xs: 50, sm:100},
           left: '50%',
           transform: 'translateX(-50%)'
 
@@ -56,13 +56,13 @@ function App() {
           color: 'white',
           top: {xs:200, sm: 300, md:400, lg:600},
         
-          left: '75%',
+          left: {xs:'50%', sm:'75%'},
           transform: 'translateX(-50%)'
 
         }}>
          <Link  to="table" spy={true} smooth={true} offset={10} duration={1000} > 
           <Button variant="contained" >
-        <Typography align="center" sx={{fontSize: {xs: 15, sm:30}, padding: {xs:1,sm:3}, fontWeight: 450 }}>  
+        <Typography align="center" sx={{width: {xs:200, sm: 300},fontSize: {xs: 8, sm:30}, padding: {xs:1,sm:3}, fontWeight: 450 }}>  
           Get Teams & Weather
         </Typography>
           </Button> 
